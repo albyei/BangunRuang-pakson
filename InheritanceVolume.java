@@ -5,6 +5,8 @@
  */
 package inheritancevolume;
 
+import java.util.Scanner;
+
 /**
  *
  * @author MOLKET012
@@ -12,9 +14,24 @@ package inheritancevolume;
 public class InheritanceVolume {
     public static void main(String[] args) {
         //objek bangun ruang
+        Scanner input = new Scanner (System.in);
+      System.out.print("Masukkan sisi persegi : ");
+      int sisi =input.nextInt();
+      System.out.print("Masukkan jari-jari lingkaran (r) : ");
+      int jari =input.nextInt();
+      System.out.print("Masukkan panjang persegi panjang : ");
+      int panjang =input.nextInt();
+      System.out.print("Masukkan lebar persegi panjang : ");
+      int lebar =input.nextInt(); 
+      System.out.print("Masukkan tinggi segitiga : ");
+      int tinggi =input.nextInt();
+      System.out.print("Masukkan alas segitiga : ");
+      int alas =input.nextInt();
+      
         BangunRuang bangunRuang = new BangunRuang();
         
         //membuat obj dan mengisi
+        
         Bola Bola = new Bola();
         Bola.sisi = 543;
         
